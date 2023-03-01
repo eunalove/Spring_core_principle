@@ -31,7 +31,7 @@ class RateDiscountPolicyTest {
         Member member = new Member(1L, "memberBASIC", Grade.BASIC);
         //when
         int discount = discountPolicy.discount(member, 10000);
-        assertThat(discount).isEqualTo(1000);
+        assertThat(discount).isEqualTo(0);
         //then
 
     }
