@@ -1,8 +1,5 @@
 package hello.core.lifecycle;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -15,7 +12,12 @@ public class NetworClient {
     }
 
     public void setUrl(String url) {
+        System.out.println("NetworClient.setUrl");
         this.url = url;
+    }
+
+    public void printUrl(){
+        System.out.println("프린트URL = " + url);
     }
 
     //서비스 시작 시 호출

@@ -22,6 +22,7 @@ public class BeanLifeCycleTest {
         public NetworClient networClient(){
             NetworClient networClient = new NetworClient();
             networClient.setUrl("http://hello-spring.dev");
+            networClient.printUrl();
             return networClient;
         }
     }
